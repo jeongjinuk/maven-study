@@ -8,7 +8,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 @Mojo(name = "helloMaven")
 public class HelloMaven extends org.apache.maven.plugin.AbstractMojo {
 
-    @Parameter(name = "msg", defaultValue = "hello Maven!")
+    @Parameter(property = "helloMaven.msg", defaultValue = "hello Maven!")
     private String msg;
 
     @Override
