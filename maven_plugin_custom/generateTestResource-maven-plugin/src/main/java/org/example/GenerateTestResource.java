@@ -30,7 +30,6 @@ public class GenerateTestResource extends org.apache.maven.plugin.AbstractMojo{
                 .append(path);
         File f1 = new File(stringBuilder.toString());
         File f2 = new File(stringBuilder.toString(), fileName);
-        getLog().info(stringBuilder.toString());
         try {
             if (!f1.exists()){
                 f1.mkdir();
