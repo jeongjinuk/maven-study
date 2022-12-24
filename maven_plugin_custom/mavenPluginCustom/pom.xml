@@ -30,7 +30,6 @@
                 <version>1.0-SNAPSHOT</version>
                 <executions>
                     <execution>
-                        <!--phase 설정에 따라 변경할 수 있다.-->
                         <phase>process-test-classes</phase>
                         <goals>
                             <goal>generateResource</goal>
@@ -38,7 +37,6 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!--조금 신기한건 property의 설정을 greeting으로 바꾸고했는데 변수의 이름을 따라가는 것 같다.-->
                     <testText>znznznznznznznzn</testText>
                 </configuration>
             </plugin>
