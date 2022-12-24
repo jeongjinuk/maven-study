@@ -13,4 +13,29 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.example</groupId>
+                <artifactId>hello-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>helloMaven</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <msg>안녕하세요 메이븐!!! 시작입니다.</msg>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+
+
 </project>
