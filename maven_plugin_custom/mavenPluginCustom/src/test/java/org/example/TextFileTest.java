@@ -29,7 +29,6 @@ class TextFileTest {
     public String verifyString(String FilePath) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(FilePath)))){
             String s = reader.readLine();
-            System.out.println(s +"!!!!!!!!!!!!!!!!!!!!!!!!!!");
             return reader.readLine();
         }catch (IOException e){
             throw new RuntimeException(e);
